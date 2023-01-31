@@ -89,7 +89,7 @@ To connect the server (через консоль), you need to do:
 `sudo nano /etc/systemd/system/jupyter.service`
 
 3. И вставляем туда следующую конфигурацию: 
-
+`
 [Unit]
 
 After=network.service
@@ -103,3 +103,4 @@ User=ubuntu
 
 WantedBy=default.target
 
+`
