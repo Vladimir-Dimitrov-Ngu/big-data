@@ -67,12 +67,20 @@ To connect the server (через консоль), you need to do:
 
 ### Автоматическое подключение через Proxy
 echo `<<EOF >>~/.ssh/config`
+
 Host lsml-proxy
-    HostName IP_PROXY
-    User yc-user
-    IdentityFile ~/.ssh/id_key
+
+HostName IP_PROXY
+
+User yc-user
+
+IdentityFile ~/.ssh/id_key
+
 
 Host lsml-head
-    HostName FQDN
-    User ubuntu
-    ProxyJump lsml-proxy
+
+HostName FQDN
+
+User ubuntu
+
+ProxyJump lsml-proxy
