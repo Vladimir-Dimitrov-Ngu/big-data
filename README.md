@@ -66,7 +66,7 @@ To connect the server (через консоль), you need to do:
 Проверка: `hadoop version`, должен вывести верси: 3.2.2 (на состояние 31.01.2023)
 
 ### Автоматическое подключение через Proxy
-echo <<EOF >>~/.ssh/config
+echo `<<EOF >>~/.ssh/config`
 Host lsml-proxy
     HostName IP_PROXY
     User yc-user
