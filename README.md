@@ -89,18 +89,12 @@ To connect the server (через консоль), you need to do:
 `sudo nano /etc/systemd/system/jupyter.service`
 
 3. И вставляем туда следующую конфигурацию: 
-`
-[Unit]
 
-After=network.service
+![image](https://user-images.githubusercontent.com/84929000/215673655-1a7320e7-9e0a-4f02-ad3b-2685b3c69bca.png)
 
-[Service]
+4. Проверка: `cat /etc/systemd/system/jupyter.service`
+5. Запускаем наш  сервер:  
 
-ExecStart=/opt/conda/bin/jupyter notebook --no-browser --ip 0.0.0.0 --port 8888 --NotebookApp.token="" --notebook-dir=/home/ubuntu
-User=ubuntu
+`sudo systemctl enable jupyter.service`
 
-[Install]
-
-WantedBy=default.target
-
-`
+`sudo systemctl start jupyter.service`
