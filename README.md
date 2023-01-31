@@ -66,7 +66,8 @@ To connect the server (через консоль), you need to do:
 Проверка: `hadoop version`, должен вывести верси: 3.2.2 (на состояние 31.01.2023)
 
 ### Автоматическое подключение через Proxy
- "```\n",
+"\n",
+    "```\n",
     "echo <<EOF >>~/.ssh/config\n",
     "Host lsml-proxy\n",
     "\tHostName 62.84.126.222\n",
@@ -78,4 +79,5 @@ To connect the server (через консоль), you need to do:
     "\tUser ubuntu\n",
     "\tProxyJump lsml-proxy\n",
     "EOF\n",
-    "```\n"
+    "```\n",
+    "\n",
