@@ -71,4 +71,22 @@ To connect the server (через консоль), you need to do:
 
 ![image](https://user-images.githubusercontent.com/84929000/215666714-890d9711-e2f2-476a-9d47-91b22f9a867d.png)
 
+Теперь можно подключаться так: `ssh lsml-head`
+
+### Работа с Object Storage
+
+Для подключения Object Storage: hdfs dfs -ls s3a://backet_name/
+
+Для передачи в Object Storage:  hdfs dfs -put file.txt s3a://backet_name/file.txt
+
+### Настраиваем Jupiter Notebook
+
+Для более удобной работы нам потребуется Jupiter. 
+
+1. На головной машине устанавливаем Jupiter Notebook: `pip3 install notebook`
+2. Для того, чтобы во время запуска кластера запускался и jupiter, необходимо прописать следующую команду:
+
+`sudo nano /etc/systemd/system/jupyter.service`
+
+3. 
 
