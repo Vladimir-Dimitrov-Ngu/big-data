@@ -66,4 +66,9 @@ To connect the server (через консоль), you need to do:
 Проверка: `hadoop version`, должен вывести верси: 3.2.2 (на состояние 31.01.2023)
 
 ### Автоматическое подключение через Proxy
+
+`nano /.ssh/config`
+
 ![image](https://user-images.githubusercontent.com/84929000/215666714-890d9711-e2f2-476a-9d47-91b22f9a867d.png)
+
+
