@@ -98,3 +98,10 @@ To connect the server (через консоль), you need to do:
 `sudo systemctl enable jupyter.service`
 
 `sudo systemctl start jupyter.service`
+
+6. Проверка: systemctl status jupyter.service
+7. В конфиге для более удобного доступа, следует прописать: 
+
+![image](https://user-images.githubusercontent.com/84929000/215674191-1f74f899-c662-4f65-96b3-d9968a797b42.png)
+
+8. Для запуска: `ssh -N lsml-proxy`
