@@ -66,21 +66,16 @@ To connect the server (через консоль), you need to do:
 Проверка: `hadoop version`, должен вывести верси: 3.2.2 (на состояние 31.01.2023)
 
 ### Автоматическое подключение через Proxy
-echo `<<EOF >>~/.ssh/config`
-
-Host lsml-proxy
-
-HostName IP_PROXY
-
-User yc-user
-
-IdentityFile ~/.ssh/id_key
-
-
-Host lsml-head
-
-HostName FQDN
-
-User ubuntu
-
-ProxyJump lsml-proxy
+ "```\n",
+    "echo <<EOF >>~/.ssh/config\n",
+    "Host lsml-proxy\n",
+    "\tHostName 62.84.126.222\n",
+    "\tUser yc-user\n",
+    "\tIdentityFile ~/.ssh/id_key\n",
+    "\n",
+    "Host lsml-head\n",
+    "    HostName rc1a-dataproc-m-81gv9d0a18t0dy1r.mdb.yandexcloud.net\n",
+    "\tUser ubuntu\n",
+    "\tProxyJump lsml-proxy\n",
+    "EOF\n",
+    "```\n"
