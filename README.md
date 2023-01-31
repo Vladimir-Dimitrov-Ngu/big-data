@@ -60,3 +60,5 @@ To connect the server (через консоль), you need to do:
 1. **Узнать какая машина главная (Master Node).** Заходим в Data Proc, заходим в кластер, далее кликаем хосты. Выбираем хост с Master Node.
 2. Берем его _Внутренний FQDN _.
 3. В консоли прописываем команду: `ping you_FQDN`
+
+Быстрый способ подключиться: `ssh -A -J yc-user@IP_PROXY ubuntu@FQDN`
